@@ -6,10 +6,10 @@ The goal of this project is to create an AWS account, set up a Linux server on A
 
 ## Requirements
 
-You are required to complete the following tasks:
+### You are required to complete the following tasks:
 ---
 
-## 1. Launch an EC2 Instance
+#### 1. Launch an EC2 Instance
 
 1. **Sign in** to the AWS Management Console.  
 2. Navigate to **EC2 → Instances → Launch Instance**.  
