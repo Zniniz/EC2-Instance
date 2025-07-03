@@ -27,6 +27,7 @@ The goal of this project is to create an AWS account, set up a Linux server on A
    - Custom TCP (Port 80) from Anywhere-IPv6
 6. Click on Advanced details
    - Scroll all the way down to user data
+   - Add the following:
    ```bash
    sudo apt update
    sudo apt install -y nginx
@@ -42,10 +43,28 @@ The goal of this project is to create an AWS account, set up a Linux server on A
 
 ```bash
 # Ensure your .pem key is only user-readable
-chmod 600 ~/Downloads/my-key.pem
+chmod 600 ~/path/my-key.pem
 
 # SSH in
-ssh -i ~/Downloads/my-key.pem ubuntu@3.95.21.79
+ssh -i ~/path/my-key.pem ubuntu@(e.g. 3.95.21.79)
+
+# Navigate to
+http://(e.g. 3.95.21.79):80
+```
+
+### 3. HTML
+
+If you want to make changes to the html file, you can navigate to `vim /var/www/html`
+
+
+
+
+
+
+
+
+
+
 
 
 
