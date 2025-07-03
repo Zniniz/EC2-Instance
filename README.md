@@ -15,9 +15,8 @@ You are required to complete the following tasks:
       - Choose a t2.micro instance type (eligible for AWS Free Tier).
       - Use the default VPC and subnet for your region.
       - Configure the security group to allow inbound traffic on ports 22 (SSH) and 80 (HTTP).
-	```SSH will already be configured to port 22
-	   Add two rules with custom TCP, Port Range set as 80, 1 as IPv4 and 2 as IPv6
-	```
+	`SSH will already be configured to port 22`
+	`Add two rules with custom TCP, Port Range set as 80, 1 as IPv4 and 2 as IPv6`
       - Create a new key pair or use an existing one for SSH access.
 	`Don't lose the .pem file`
       - Assign a public IP address to your instance.
