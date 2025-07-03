@@ -7,24 +7,24 @@ The goal of this project is to create an AWS account, set up a Linux server on A
 ## Requirements
 
 You are required to complete the following tasks:
+---
 
-- Create an AWS account if you don’t have one already.
-- Familiarize yourself with the AWS Management Console.
-- Launch an EC2 instance with the following specifications:
-      - Use Ubuntu Server AMI.
-      - Choose a t2.micro instance type (eligible for AWS Free Tier).
-      - Use the default VPC and subnet for your region.
-      - Configure the security group to allow inbound traffic on ports 22 (SSH) and 80 (HTTP).
-	`SSH will already be configured to port 22`
-	`Add two rules with custom TCP, Port Range set as 80, 1 as IPv4 and 2 as IPv6`
-      - Create a new key pair or use an existing one for SSH access.
-	`Don't lose the .pem file`
-      - Assign a public IP address to your instance.
-	`0.0.0.0 format`
-- Connect to your EC2 instance using SSH and the private key.
-  `sasfsdf`
-- Update the system packages and install a web server (e.g., Nginx).
-- Create a simple HTML file for your static website.
-- Deploy the static website to your EC2 instance.
-- Access your website using the public IP address of your EC2 instance.
+## 1. Launch an EC2 Instance
 
+1. **Sign in** to the AWS Management Console.  
+2. Navigate to **EC2 → Instances → Launch Instance**.  
+3. Configure:  
+   - **AMI**: Ubuntu Server LTS  
+   - **Instance Type**: t2.micro (Free Tier eligible)  
+   - **Network**: default VPC/subnet  
+4. **Key Pair**:  
+   - Create a new key-pair (download the `.pem` file)  
+   - Or select an existing one  
+   - **Important:** never lose this file!  
+5. **Security Group**: allow inbound:  
+   - SSH (Port 22) from your IP  
+   - Custom TCP (Port 80) from Anywhere-IPv4
+   - Custom TCP (Port 80) from Anywhere-IPv6
+6. Click **Launch** and note your instance’s **Public IPv4** address (e.g. `3.95.21.79`).
+
+---
